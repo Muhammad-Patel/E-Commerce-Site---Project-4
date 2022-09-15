@@ -865,3 +865,155 @@ font-size: 16px;
         transition: 0.3s ease;
     }
 }
+
+/* ======================================================================================== 
+====================================  Shop Page ===========================================
+===========================================================================================*/
+
+
+/*====================================  Hero ===========================================*/
+
+#shop-hero{
+    background-image: url(img/banner/b1.jpg);
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+#shop-hero h2, #shop-hero p{
+    color: white;
+}
+
+#page-nav{
+    padding: 40px 80px;
+    text-align: center;
+}
+
+#page-nav a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+/*======================================================================================== 
+====================================  Sproducts Page ===========================================
+===========================================================================================*/
+
+#pro-details{
+    padding: 40px 80px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.single-product{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-grp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img{
+    flex-basis: 24%;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+.small-img:hover{
+    border: 1px solid #088178;
+    transition: 0.4s all ease;
+}
+
+.single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+.single-pro-details h4{
+    padding: 40px 0 20px 0;
+    font-weight: bold;
+}
+.single-pro-details h2{
+    font-size: 26px;
+}
+.single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.single-pro-details button{
+    background-color: #088178;
+    color: white;
+}
+
+.single-pro-details span{
+    line-height: 25px;
+}
+
+@media (max-width:477px){
+    #shop-hero{
+        height: 20vh;
+    }
+    #product1{
+        padding-top: 0;
+    }
+
+    #pro-details{
+        flex-direction: column;
+    }
+    .single-product {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #pro-details {
+        padding: 20px 40px;
+        display: flex;
+        margin-top: 20px;
+    }
+    .single-pro-details {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .single-pro-details span{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .single-pro-details select {
+        display: block;
+        padding: 2px 3px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    .single-pro-details input {
+        width: 30px;
+        height: 30px;
+        padding-left: 10px;
+        font-size: 12px;
+        margin-right: 10px;
+        outline: none;
+    }
+    .single-pro-details h4 {
+        padding: 30px 0 10px 0;
+        font-weight: bold;
+    }
+}
